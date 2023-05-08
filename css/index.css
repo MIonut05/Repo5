@@ -1,0 +1,42 @@
+.portfolio-item-wrapper {
+    position: relative;
+}
+
+.portfolio-img-background {
+
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+
+}
+
+.img-text-wrapper {
+
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+}
+
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+
+}
+
+.img-text-wrapper:hover .subtitle {
+    font-weight: 600;
+    color: greenyellow;
+}
+
+.logo-wrapper {
+    color: white;
+}

@@ -1,0 +1,32 @@
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Sigmar&family=Varela+Round&display=swap');
+
+
+
+
+
+
+
+:root {
+
+  /* Culori  */
+
+  --color-base: #679299;
+  --color-second: #F37033;
+  --gradient: linear-gradient(178deg, #679299 ,  #df7c4e 50%, #F37033  100%, #d57446 100%);
+  
+  /* Font  */
+  /* -------------------------------------------------------------------------- */
+  /*                                                         */
+  /* -------------------------------------------------------------------------- */
+  --font-principal: 'EB Garamond', serif;
+  --font-secundar: 'Sigmar', cursive; 
+  --font-logo: 'Varela Round', sans-serif;
+
+
+  
+
+}

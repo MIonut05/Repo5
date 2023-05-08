@@ -1,0 +1,89 @@
+@import url(variable.css);
+@import url(header.css);
+@import url(index.css);
+@import url(footer.css);
+@import url(nightmode.css);
+
+.section {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+
+    list-style: none;
+}
+
+p {
+    margin: 0 0 15px 15px;
+
+}
+
+h4 {
+    padding: 10px;
+}
+
+h5,
+h6 {
+    padding: 5px;
+}
+
+
+.font-title {
+    font-family: var(--font-logo);
+    font-weight: 400;
+    font-size: 80px;
+}
+.font-title-second{
+    font-family: var(--font-logo);
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.font-text-first {
+    font-family: var(--font-logo);
+}
+
+.font-text-second {
+    font-family: var(--font-principal);
+}
+
+.gradient-title {
+    background-image: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+
+}
+
+.alghorithm_box {
+    font-family: var(--font-principal);
+    text-align: center;
+    background: transparent;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                   Culori aplicabile pe intreg continutul                   */
+/* -------------------------------------------------------------------------- */
+
+.extra-style {
+    border-radius: 10px;
+    box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+}
+
+.icon-principal-color {
+    color: var(--color-base);
+}
+
+.icon-secundar-color {
+    color: var(--color-second);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                               Modul de nopate                              */
+/* -------------------------------------------------------------------------- */

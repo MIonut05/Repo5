@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasa 9 </title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://kit.fontawesome.com/87160dd999.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="m-4 ">
+
+    <!--Navigation-->
+
+    <div class="header-info">
+        <span class="font-text-first">Pregateste-te cat inca mai ai timp!</span>
+    </div>
+    <header class="header-section">
+        <div class="header-logo-section">
+            <img class="schimba-imaginea header-logo-image" src="images/1.png" alt="logo-image">
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"><i class="icon-principal-color fa-solid fa-bars fa-lg"></i></button>
+            <div class="header-menu-section">
+                <ul class="m-0 font-text-first">
+                    <li>
+                        <a class="icon-principal-color" href="index.html">Acasă</a>
+                    </li>
+                    <li>
+                        <a class="icon-principal-color" href="magazin.html">Magazin</a>
+                    </li>
+                    <li>
+                        <a class="icon-principal-color" href="#">Merch BAC</a>
+                    </li>
+                    <li>
+                        <a class="icon-principal-color" href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a class="icon-principal-color" href="desprenoi.html">Despre mine</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-user-section">
+            <ul class="m-0">
+                <li>
+                    <a class="SchimbaTema "><i class="icon-secundar-color fa-solid fa-moon"></i></a>
+
+                </li>
+                <li>
+                    <a><i class="icon-secundar-color fa-solid fa-user"></i></a>
+                </li>
+                <li>
+                    <a><i class="icon-secundar-color fa-solid fa-cart-shopping"></i></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!--Main Part -->
+
+
+    <div class="text-center">
+        <h1 class="gradient-title font-title">Clasa 9</h1>
+    </div>
+
+
+    <section class="row gx-0 py-1  rounded">
+
+        <!--Aside Part -->
+        <aside class='d-none d-md-block col-md-4 col-lg-3 my-4 '>
+
+            <aside class="d-flex flex-column p-1 min-vh-100 sticky-top mx-5 ">
+
+                <a href="/"
+                    class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+
+                    <span class="fs-4 title"> Sectiuni </span>
+                </a>
+                <hr />
+                <ul class="nav flex-column mb-auto ms-2">
+                    <li class="buton my-3">
+                        <a href="#" id="pres1" class="d-inline-flex text">
+                            <i class="icon-secundar-color d-flex align-items-center mx-2 fa-solid fa-house"></i>
+                            <span class="icon-principal-color"> Expresii </span>
+                        </a>
+                    </li>
+                    <li class="buton my-3">
+
+                        <a href="#" id="pres2" class="d-inline-flex text">
+                            <i class="icon-secundar-color d-flex align-items-center mx-2 fa-solid fa-photo-film"></i>
+                            <span class="icon-principal-color"> Instructiuni </span>
+                        </a>
+                    </li>
+                    <li class="buton my-3">
+                        <a href="#" id="pres3" class="d-inline-flex text">
+                            <i class="icon-secundar-color d-flex align-items-center mx-2 fa-regular fa-compass"></i>
+                            <span class="icon-principal-color">Variabile</span>
+                        </a>
+                    </li>
+                    <li class="buton my-3">
+                        <a href="#" id="pres4" class="d-inline-flex text">
+                            <i
+                                class="icon-secundar-color d-flex align-items-center mx-2 fa-regular fa-envelope-open"></i>
+                            <span class="icon-principal-color">Operatii</span>
+                        </a>
+                    </li>
+                    <li class="buton my-3">
+                        <a href="#" id="pres5" class="d-inline-flex text">
+                            <i
+                                class="icon-secundar-color d-flex align-items-center mx-2 fa-regular fa-envelope-open"></i>
+                            <span class="icon-principal-color">Structuri</span>
+                        </a>
+                    </li>
+
+
+                </ul>
+
+            </aside>
+        </aside>
+
+        <!--Part Second -->
+        <main class="col-sm-12 col-md-8 col-lg-9 my-4 ">
+
+            <div class="py-2 px-2">
+
+                <div id="section1" class="section">
+
+                    <h2>1. Citiri si Scrieri in limbajul C/C++</h2>
+
+                    <p>Conceptul central in operatiile de intrare/iesire in limbajul C++ este fluxul de intrare/iesire
+                        (denumirea originala fiind stream). In fisierul antet iostream.h sunt declarate doua fluxuri
+                        standard: </p>
+
+                    <ul class="p-0">
+                        <li>un flux de intrare de la tastatura , cin(console input);</li>
+                        <li>un flux de iesire de la tastatura, cout(console output);</li>
+                    </ul>
+
+                    <b class="p-2"><em>Exemplu:</em> </b>
+                    <ul>
+                        <li>cin >> nume_variabila;</li>
+                        <li>cout << nume_variabila;</li>
+                    </ul>
+
+                    <b class="p-2"><em>Observatii:</em> </b>
+                    <ol>
+                        <li>La citirea cu ajutorul operatorului '<<' , valorile numerice care se citesc trebuie
+                                introduse de la tastatura, separate prin caractere albe. </li>
+                        <li>Caracterele albe sunt ignorate de operatorul de citire '>>' </li>
+
+                    </ol>
+
+                </div>
+
+                <div id="section2" class="section">
+
+                    <h4>1.1 Expresii</h4>
+
+                    <p> O expresie este constituita dintr-o succesiune de operanzi, conectati prin operatori.
+                        Un operand poate fi o constanta, o variabila, un apel de functie sau o expresie incadrata intre
+                        paranteze rotunde.</p>
+
+                    <p>Operatorii aritmetici desemneaza operatii aritmetice uzuale, cum sunt :</p>
+                    <ul class="mt-2">
+                        <li>'*'(inmultirea);</li>
+                        <li>'/' (impartirea);</li>
+                        <li>'%' (restul impartirii intregi);</li>
+                    </ul>
+
+                    <table class="table">
+                        <thead class="text-center">
+                            <tr>
+                                <th>Operatori</th>
+                                <th>Denumire</th>
+                                <th>Tip</th>
+                                <th>Prioritate</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-center">
+                            <tr>
+                                <td>'+' , '-'</td>
+                                <td>semn algebric</td>
+                                <td>unari</td>
+                                <td>2</td>
+                            </tr>
+
+                            <tr>
+                                <td>'*' , '/' , '%'</td>
+                                <td>multiplicativi</td>
+                                <td>binari</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>'+' , '-'</td>
+                                <td>aditivi</td>
+                                <td>binari</td>
+                                <td>5</td>
+                        </tbody>
+                    </table>
+
+                    <h5 class="p-2">Operatori de incrementare/decrementare</h5>
+
+                    <ul>
+                        <li>Operatorul de incrementare este '++' </li>
+                        <li>Operatorul de decrementare este '--' </li>
+                    </ul>
+                    <div class="d-flex align-items-center p-2">
+                        <b><em>Exemplu:</em> </b>
+                        <small class="mx-auto"> int a=3, b=5; </small>
+                        <small class="mx-auto">float x=2.5; </small>
+                    </div>
+
+                    <ol class="mt-2">
+                        <li> a++ 4 Se mareste valoarea variabilei a cu 1 </li>
+                        <li>--x 1.5 Se micsoreaza valoarea variabilei x cu 1 </li>
+                        <li> int c= --a; 3 Variabila declarata c primeste valoarea 2 </li>
+                        <li>int c= a--; 3 Variabila declarata c primeste valoarea 3 </li>
+                        <li>(a+b)++ - Eroare ! Operatorii de incrementare/decrementare nu pot fi aplicati unei expresii
+                        </li>
+                    </ol>
+
+                    <h5 class="p-2">Operatorii relationali</h5>
+
+                    <p>Sunt operatori binari si desemneaza relatia de prdine in care se gasesc cei doi
+                        operanzi.</p>
+                    <div class="alghorithm_box card">
+                        <ul class="mt-2">
+                            <li>'<' (mai mic);</li>
+                            <li>'>' (mai mare);</li>
+                            <li>'<=' (mai mic egal);</li>
+                            <li>'>=' (mai mare egal);</li>
+                        </ul>
+                    </div>
+
+
+                    <h5 class="p-2">Operatorii de egalitate</h5>
+                    <p>Sunt operatori binari si desemneaza relatia de egalitate (==) sau inegalitate (!=) in care se
+                        gasesc cei doi
+                        operanzi .</p>
+
+                    <h5 class='p-2'>Operatori logici globali</h5>
+                    <p>Exista trei operatori logici globali:</p>
+
+
+                    <table class="table mt-2">
+                        <thead class="text-center">
+                            <tr>
+                                <th>Operatori</th>
+                                <th>Denumire</th>
+                                <th>Tip</th>
+                                <th>Prioritate</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-center">
+                            <tr>
+                                <td>!</td>
+                                <td>negatia logica(not)</td>
+                                <td>unar</td>
+                                <td>2</td>
+
+                            </tr>
+
+                            <tr>
+                                <td>&& </td>
+                                <td> conjunctie logica(sau)</td>
+                                <td>binar</td>
+                                <td>12</td>
+
+                            </tr>
+                            <tr>
+                                <td>//</td>
+                                <td>disjunctie logica</td>
+                                <td>binar</td>
+                                <td>13</td>
+
+                            </tr>
+                            </tbodt>
+                    </table>
+
+                    <h5 class='p-2'>Operatori logici pe biti</h5>
+                    <p>Se aplica numai operanzilor intregi si ca efect aplicarea operatiilor
+                        logice
+                        cunoscute bit cu bit.</p>
+
+                    <p>Operatorii logici pe biti sunt:</p>
+                    <div class="alghorithm_box card">
+                        <ul class="mt-2">
+                            <li>'~'</li>
+                            <li>'~'</li>
+                            <li>'~'</li>
+                            <li>'~'</li>
+                        </ul>
+                    </div>
+
+
+                    <h5 class='p-2'>Operatori de atribuire</h5>
+                    <p>Sunt operatori binari care permit modificarea valorii unei variabile.</p>
+
+                    <ul class="mt-2">
+                        <li>variabila = expresie;</li>
+                        <li>variabila operator = expresie;</li>
+                        <li>operator = { *, /, %, +, -, << ,>>, &, vertical line, ^ }</li>
+                    </ul>
+
+                    <h5 class='p-2'>Operatori conditionali</h5>
+
+                    <p>Sunt : '?' si ':' si se utilizeaza numai impreuna Efect: se
+                        evalueaza expresie_1. Daca expresie_1 are o valoare nenula, atunci
+                        valoarea
+                        expresiei
+                        conditionala este egala cu valoarea exprsie_2 </p> <br>
+
+
+                    <h5 class='p-2'>Operatorul de referentiere</h5>
+
+                    <ul class="mt-2">
+                        <li> & variabila </li>
+
+                        <li> Operatorul de conversie explicita </li>
+
+                        <li> (tip) expresie </li>
+                    </ul>
+
+
+
+                </div>
+
+
+                <div id="section3" class="section">
+
+                    <h2> 2. Instructiunile limbajului C/C++ </h2>
+
+                    <h4 class="mt-4"> 2.1 ( Instructiunea expresie C/C++ )</h4>
+                    <div class="alghorithm_box card">
+                        <ul>
+
+                            <li>expresie; </li>
+                        </ul>
+                    </div>
+                    <ul>
+                        <li>Efect : Se evalueaza expresia </li>
+
+                    </ul>
+
+                    <h4 class="mt-2"> 2.2 (Instructiunea compusa C/C++)</h4>
+                    <div class="alghorithm_box card">
+                        <ul>
+                            <li><em>{</em></li>
+                            <li><em> declaratii</em></li>
+                            <li><em> instructiune_1 </em></li>
+                            <li><em> instructiune_2 </em></li>
+                            <li><em> ... </em></li>
+                            <li> <em> instructiune_n </em></li>
+                            <li> <em> } </em></li>
+                        </ul>
+
+                    </div>
+                    <ul>
+
+                        <li>Efect : </li>
+                        <li>Se executa in ordine instructiunile specificate. </li>
+
+                    </ul>
+
+
+                    <h4 class="mt-2"> 2.3 (Instructiunea if) </h4>
+                    <div class="alghorithm_box card">
+                        <ul>
+                            <li> if (expresie)</li>
+                            <li> instructiune_1</li>
+                            <li> else </li>
+                            <li> instructiune_2</li>
+                        </ul>
+                    </div>
+
+                    <h4 class="mt-2"> 2.4 (Instructiunea switch) </h4>
+                    <div class="alghorithm_box card">
+                        <ul>
+
+                            <li> switch (expresie) </li>
+                            <li>{</li>
+                            <li>case expresie-constanta a1: secventa-instructiuni-1; </li>
+                            <li> case expresie-constanta a2: secventa-instructiuni-2; </li>
+                            <li> ... </li>
+                            <li> case expresie-constanta an: secventa-instructiun-in; </li>
+                            <li> default: secventa-instructiuni-in+1; </li>
+                            <li>}</li>
+
+                        </ul>
+                    </div>
+
+
+                    <h4 class="mt-2"> 2.5 (Instructiunea break) </h4>
+
+
+                    <div class="alghorithm_box card">
+                        <ul>
+                            <li> break; </li>
+                        </ul>
+                    </div>
+                    <ul>
+                        <li>-> Efect : Determina iesirea neconditionata din instructiunea switch, while, for sau
+                            do-while in care apare. </li>
+
+                    </ul>
+
+                    <h4 class="mt-2"> 2.6 (Instructiunea while) </h4>
+                    <div class="alghorithm_box card">
+                        <ul>
+                            <li>while(expresie) </li>
+                            <li> instructiune;</li>
+
+                        </ul>
+                    </div>
+
+                    <ul>
+                        <li> -> Efect </li>
+                        <li> Pas1: se evalueaza expresia </li>
+                        <li> Pas2: -> daca valoarea expresiei este 0, se iese din instructiunea</li>
+                        <li> while; </li>
+                        <li> -> daca valoarea expresiei este diferita de 0, se executa instructiunea, </li>
+                        <li> apoi se revine la Pas1. </li>
+                    </ul>
+
+                    <h4 class="mt-2"> 2.7 ( Instructiunea do-while ) </h4>
+
+                    <div class="alghorithm_box card">
+                        <ul>
+                            <li> do </li>
+                            <li>{</li>
+                            <li> instructiune; </li>
+                            <li>}</li>
+                            <li> while(expresie); </li> <br>
+                        </ul>
+                    </div>
+                    <ul>
+                        <li> Efect: </li>
+                        <li>Pas1: Se executa instructiunea </li>
+                        <li>Pas2: Se evalueaza expresia </li>
+                        <li>Pas3: - Daca valoarea expresiei este 0, se iese din instructiunea repetitiva </li>
+                        <li>Daca valoarea expresiei este diferita de 0, se revine la Pas1</li>
+
+                    </ul>
+
+                    <h4 class="mt-2"> 2.8 (Instructiunea for) </h4>
+
+                    <p> for ( <em> expresieinitial; expresiecontin; expresiereinitial </em> ) <br>
+                        <em> instructiune; </em>
+                    </p>
+
+                    <ul>
+                        <li>Efect: </li>
+                        <li>Pas1: se evalueaza expresia de initializare; </li>
+                        <li>Pas2: se evalueaza expresia de continuare; </li>
+                        <li>Pas3: daca valoarea expresiei de continuare este 0, se iese din
+                            instructiunea repetitiva for; </li>
+                        <li> daca valoarea expresiei de continuare este diferita de 0:</li>
+                        <li>se executa instructiunea ; </li> -
+                        <li>se evalueaza expresia de reinitializare </li>
+                        <li>se revine la Pas2 </li>
+                    </ul>
+
+
+                </div>
+
+
+                <div id="section4" class="section">
+
+                    <h3 class=""> 3.Algoritmi elementari</h3>
+
+                    <h4 class="mt-4"> 3.1 Determinarea minimului si a maximului</h4>
+
+                    <p>
+                        (Minim)
+                        -> Să rezolvăm următoarea problemă: Se dau n numere întregi. Calculaţi cel mai mic dintre cele n
+                        numere date.
+                        -> Numărul de valori se cunoaște de la început. Algoritmul de rezolvare va fi:
+                    </p>
+
+                    <ul class="mt-3">
+
+                        <li>inițializăm variabila min corespunzător </li>
+
+                        <li>citim cele n numere </li>
+
+                        <li>fiecare număr se compară cu min și dacă este cazul se actualizează min</li>
+
+                    </ul>
+
+                    <div class="alghorithm_box card">
+
+                        cin >> n >> x; <br>
+                        min = x; <br>
+                        for(int i =1 ; i < n ; i ++) <br>
+                            { <br>
+                            cin >> x; <br>
+                            if(x < min) <br>
+                                min = x; <br>
+                                } <br>
+
+                    </div>
+
+                    <p>
+                        (Maxim):
+                        -> Să rezolvăm următoarea problemă: Se citesc numere întregi până la aparițialui 0, care nu se
+                        ia în considerare.
+                        -> Calculaţi maximul lor. Numărul de valori nu se cunoaște de la început.
+                        -> Algoritmul de rezolvare va fi:
+                    </p>
+
+
+                    <ul class="mt-3">
+                        <li> inițializăm variabila max corespunzător </li>
+                        <li>citim un număr în x </li>
+                        <li> cât timp x este nenul </li>
+                        <li> x se compară cu max și dacă este cazul se actualizează max </li>
+                        <li> citim altă valoare pentru x </li>
+                    </ul>
+
+
+                    <div class="alghorithm_box card">
+
+                        cin >> n >> x; <br>
+                        min = x; <br>
+                        for(int i =1 ; i < n ; i ++) <br>
+                            { <br>
+                            cin >> x; <br>
+                            if(x < min) <br>
+                                min = x; <br>
+                                } <br>
+
+                    </div>
+
+
+                    <h4> 3.2 Cifrele unui numar</h4>
+
+                    <div class="alghorithm_box card">
+
+
+                        #include <'iostream'> <br>
+                            using namespace std; <br>
+                            int main() <br>
+                            {
+                            int n; <br>
+                            cin >> n; <br>
+                            while(n != 0) // cat timp n este nenul - mai are cifre <br>
+                            {
+                            int uc = n % 10; //determinam ultima cifra a lui n <br>
+                            cout << uc << " " ; // prelucram ultima cifra <br>
+                                n /= 10; // eliminam ultima cifra (trunchiem numarul) <br>
+                                } <br>
+                                return 0; <br>
+                                }
+
+                    </div>
+
+                    <h5 class='p-2'>Oglinditul unui numar</h5>
+
+                    <div class="alghorithm_box card">
+
+                        #include <'iostream'> <br>
+                            using namespace std; <br>
+                            int main(){ <br>
+                            int n; <br>
+                            cin >> n; <br>
+                            int ogl= 0; <br>
+                            while(n){ <br>
+                            ogl =10*ogl + n%10; <br>
+                            n /= 10; <br>
+                            } <br>
+                            cout << ogl << endl; <br>
+                                return 0; <br>
+                                } <br>
+
+                    </div>
+
+                    <h4> 3.3 Divizibilitate </h4>
+
+                    <p>Divizorii unui numar: </p>
+
+                    <h5 class='p-2'>Algoritmul naiv</h5>
+
+
+                    <div class="alghorithm_box card">
+
+                        #include <'iostream'> <br>
+                            int main() <br>
+                            { <br>
+                            int n; <br>
+                            std :: cin >> n; <br>
+                            for(int d =1 ; d <= n ; d ++ ) <br>
+                                if(n % d == 0) <br>
+                                std :: cout << d << " " ; <br>
+                                    return 0; <br>
+                                    } <br>
+
+                    </div>
+
+                    <h5 class='p-2'>2. Un algoritm mai eficient</h5>
+
+                    <div class="alghorithm_box card">
+
+                        #include <'iostream'> <br>
+                            int main() <br>
+                            { <br>
+                            int n; <br>
+                            std :: cin >> n; <br>
+                            for(int d =1 ; d * d <= n ; d ++ ) <br>
+                                if(n % d == 0) <br>
+                                { <br>
+                                std :: cout << d << " " ; <br>
+                                    if(d * d < n) // dacă d !=sqrt(n) <br>
+                                        std :: cout << n / d << " " ; <br>
+                                            } <br>
+                                            return 0; <br>
+                                            } <br>
+                    </div>
+
+
+                    <h5 class='p-2'>CMMDC și CMMMC. Algoritmul lui Euclid</h5>
+
+
+                    <h6> 1. Algoritmul lui Euclid cu Scaderi</h6>
+
+                    <div class="alghorithm_box card">
+
+                        #include <'iostream'> <br>
+                            int main() <br>
+                            { <br>
+                            int n , m; <br>
+                            std :: cin >> n >> m; <br>
+                            while(n != m) <br>
+                            if(n > m) <br>
+                            n -= m; <br>
+                            else <br>
+                            m -= n; <br>
+                            std :: cout << n << std :: endl; <br>
+                                return 0; <br>
+                                } <br>
+
+                    </div>
+
+                    <h6> 2. Algoritmul lui Euclid cu Impartiri </h6>
+
+
+                    <div class="alghorithm_box card">
+
+                        #include <'iostream'> <br>
+                            int main() <br>
+                            { <br>
+                            int n , m; <br>
+                            std :: cin >> n >> m; <br>
+                            while(m != 0) <br>
+                            { <br>
+                            int r = n % m; <br>
+                            n = m; <br>
+                            m = r; <br>
+                            } <br>
+                            std :: cout << n << std :: endl; <br>
+                                return 0; <br>
+                                } <br>
+
+                    </div>
+
+                    <h5 class='p-2'>Primalitate</h5>
+
+                    <p>
+                        Pentru a stabili dacă un număr p este prim:
+                        numărăm divizorii săi.
+                        Dacă sunt 2 divizori, p este prim.
+                        determinăm suma divizorilor. Dacă suma este p + 1, numărul este prim.
+                        căutăm divizori ai săi diferiți de 1 și de el însuși.
+                        Dacă nu găsim, numărul este prim.
+
+                    </p>
+
+
+                    <div class="alghorithm_box card">
+
+                        #include <'iostream'> <br>
+                            int main() <br>
+                            { <br>
+                            int n; <br>
+                            std :: cin >> n; <br>
+                            bool prim = true; // presupunem ca n este prim <br>
+                            if(n < 2) <br>
+                                prim = false; // 0 si 1 nu sunt prime <br>
+                                for(int d =2 ; d * d <= n ; d ++) <br>
+                                    if(n % d == 0) <br>
+                                    prim = false; <br>
+                                    if(prim) <br>
+                                    std :: cout << n << " este prim" ; <br>
+                                        else <br>
+                                        std :: cout << n << " nu este prim" ; <br>
+                                            return 0; <br>
+                                            } <br>
+
+                    </div>
+
+                    <h5 class='p-2'>Descompunerea in factori primi</h5>
+
+                    <div class="alghorithm_box card">
+
+                        #include <iostream> <br>
+                            using namespace std; <br>
+                            int main(){ <br>
+                            int n; <br>
+                            cin >> n; <br>
+                            int d = 2, // d va fi, pe rand, fiecare factor prim din
+                            descompunere
+                            <br>
+                            p; // p va fi puterea lui d in descompunere <br>
+                            // il im partim pe n la d in mod repetat, pana cand devine 1
+                            <br>
+                            while(n > 1) <br>
+                            { <br>
+                            // numaram de cate ori se imparte n la d. Aceasta va fi puterea
+                            lui
+                            d in descompunere <br>
+                            p = 0; <br>
+                            while(n % d == 0) <br>
+                            { <br>
+                            ++p; <br>
+                            n /= d; <br>
+                            } <br>
+                            // daca s-a facut cel putin o impartire, afisam factorul si
+                            puterea
+                            <br>
+                            if(p) <br>
+                            cout << d << " " << p << endl; <br>
+                                ++ d; <br>
+                                // daca d * d il depaseste pe n si n nu este 1, decidem ca n
+                                este prim, <br>
+                                // si este factor in descompunerea valorii initiale a lui n
+                                <br>
+                                if(n>1 && d * d > n){ <br>
+                                d = n; // trecem direct la n, urmatorul factor din
+                                descompunere
+                                <br>
+                                } <br>
+                                } <br>
+                                return 0; <br>
+                                } <br>
+
+                    </div>
+
+                    <h5 class='p-2'> Termen Fibonacci </h5>
+
+                    <p>
+
+                        Fie sirul Fibonacci 1, 1, 2, 3, 5, 8, 13, 21, 34, ...
+                        Observati ca primii doi termeni sunt egali cu 1, fievcare termen urmator fiind egal cu suma
+                        celor doi termeni
+                        care il preceda.
+                        Fie n un numar natural citit de la tastatura. Scrieti un program care afiseaza cel de-al n-lea
+                        termen din sirul Fibonacci.
+
+                    </p>
+
+                    <h4 class="p-2"><em> Solutie </em></h4>
+
+
+                    <div class="alghorithm_box card">
+
+                        #include <stdio.h> <br>
+                            int main(void) <br>
+                            { <br>
+                            int n, i, f0=1, f1=1, f2=1; <br>
+                            scanf("%d", &n); <br>
+                            for(i=2;i<=n;i++) <br>
+                                { <br>
+                                f2=f1+f0; <br>
+                                f0=f1; <br>
+                                f1=f2; <br>
+                                } <br>
+
+                                printf("Cel de-al %d-lea termen Fibonacci este %d/n", n, f2); <br>
+                                return 0; <br>
+                                } <br>
+
+                    </div>
+
+
+
+                </div>
+
+                <div id="section5" class="section">
+
+                    <h3 class="mt-2"> 4. Tipuri structurate de date </h3>
+
+                    <h5 class=""> 4.1 Tablouri </h5>
+
+                    <p>
+                        Un tablou este o colectie de date de acelasi tip, memorate
+                        intr-o zona de memorie contigua, reunite sub un nnume comun (numele tabloului)
+                    </p>
+
+                    <p>
+                        <em>Declararea unei variabile de tip tablou </em> <br>
+                        tip nume[Nre];
+                    </p>
+
+
+
+                    <h5 class=""> 4.2 Prelucrari elementare pe vectori </h5>
+
+                    <p>
+                        <em>Citirea unui vector </em>
+                        Citirea unui vector se realizeaza citind elementele vectorului, unul cate unul.
+                        Sa consideram ca exemplu un vector a cu n elemente:
+                    </p>
+
+                    <div class="alghorithm_box card">
+                        (n<=100) de tip int. int a[100], n, i; cout << "n=" ; cin>> n;
+                            for (i=0; i<n; i++) { cout<<"a[" << i << "]"=";
+                        cin >> a[i] ;
+                       }
+                 </div>
+
+                <p>
+                      <em> Afisarea unui vector  </em>
+                      Afisarea unui vector  se realizeaza  afisand pe rand componentele vectorului. 
+
+                        for( .. )
+                        // Afisare vector
+                </p>
+
+                <p>
+                      <em> Copierea unui vector </em>
+                     
+                       Sa presupunem ca dorim sa copiem vectorul a intr-un alt vector b. 
+                       Copierea unui vector nu se poate face printr-o
+                       atribuire de forma b=a (veti obtine un mesaj de eraore).
+                       Copierea unui vector se realizeaza element cu element: <br>
+
+                       
+                </p>
+                <div class=" alghorithm_box card">
+                                for(i=0;i<(nrelem);i++) <br>
+                                    b[i]=a[i];
+                    </div>
+
+                    <p>
+                        <em> Determinarea elementului maxim/minim dintr-un vector </em>
+
+                        Pentru a determina cel mai mare element din vector, vom considera o variabila
+                        (max) in care vom retine la fiecare pas maximul dintre elementele analizate.
+                        Initializam variabila max cu un element din vector (ex: a[0]).
+                        Parcurgem apoi vectorul, comparand fiecare element din vector cu max si
+                        actualizand eventual maximul dupa comparare.
+                    </p>
+
+                    <div class="alghorithm_box card">
+
+                        max=a[0]; <br>
+                        for(i=1; i<(nrelem); i++) <br>
+                            if (max < a[i] ) <br>
+                                max = a[i];
+                    </div>
+
+
+
+                    <p>
+
+                        <em> Cautarea unui element intr-un vector </em>
+
+                        Fie a un vector cu n (n<=100) componente intregi si x o valoare intreaga. <br>
+                            Verificati daca x apare sau nu in vectorul a.
+                    </p>
+
+                    <div class="alghorithm_box card">
+
+                        for (gasit=i=0; i<(nrelem) && !gasit; i++) <br>
+                            if ( a[i] == x ) <br>
+                            gasit = 1; // Am gasit valoarea x in vector <br>
+
+                    </div>
+
+
+                    <p><em> Cautare binara </em></p>
+
+                    <div class="alghorithm_box card">
+
+                        for ( st=0, dr=n-1, gasit=0; !gasit && st<=dr; ) <br>
+
+                            // cautam pe x de la pozitia st la pozitia dr; cautarea <br>
+                            // continua pana gasim sau pana nu mai avem unde cauta <br>
+
+                            { <br>
+                            mijloc = (st+dr) / 2; <br>
+                            if ( a[mijloc] == x ) gasit = 1; <br>
+                            else <br>
+                            if ( a[mijloc] < x ) st=mijloc + 1; <br>
+                                else dr = mijloc -1 ; <br>
+                                } <br>
+
+                                if (gasit) <br>
+                                cout << x << " se gaseste pe pozitia " << mijloc; <br>
+                                    else <br>
+                                    cout << x << " nu se afla in vector " ; <br>
+
+                    </div>
+
+                    <h5 class=""> Sortare </h5>
+
+                    <p> <em> Sortare prin selectie </em> </p>
+
+                    <p>
+                        Sortarea prin selectie are doua variante: sortarea prin selectia elementului maxim si sortarea
+                        prin
+                        selectia elementului minim. In ambele variante , ideea de baza este aceeasi : se selecteaza cel
+                        mai
+                        mare element din vector (sau cel mai mic ) si se plaseaza pe ultima pozitie din vector
+                        (respectiv,
+                        pe prima
+                        pozitie) . Apoi se calculeaza cel mai mare dintre elementele ramase si se plaseaza pe penultima
+                        pozitie din vector
+                        (sau cel mai mic dintre elementele ramase si se plaseaza pe a doua pozitie ) s.a.m.d. Acest
+                        procedeu
+                        se repeta de n-1 ori.
+                    </p>
+
+
+                    <div class="alghorithm_box card">
+
+                        for (dr = n-1; dr>0 dr--) // Calculez maximul de la 0 la dr <br>
+                        { <br>
+                        for ( max=a[0], pozmax=0, i=1; i<=dr; i++ ) <br>
+                            if ( a[i] > max ) <br>
+                            max = a[i], pozmax=i; <br>
+
+                            a[pozmax] =a[dr]; // plasez maximul pe pozitia dr <br>
+                            a[dr] = max; <br>
+                            } <br>
+
+                    </div>
+
+                    <p> <em> Sortare prin compararea vecinilor (bubblesort) </em> </p>
+
+                    <p>
+                        o alta metoda de sortare este de a parcurge vectorul, comparand fiecare doua elemente vecine si
+                        (daca este cazul)
+                        interschimbandu-le . Cum intr-o singura trecere nu se poate realiza sortarea vectorului, acest
+                        procedeuse repeta
+                        pana cand vectorul devine sortat (la ultima trecere nu am mai efectuat nici o interschimabre).
+                    </p>
+
+                    <div class="alghorithm_box card">
+
+                        do <br>
+                        { <br>
+                        schimb=0; // initial nu am facut nici o interschimbare <br>
+                        for (i=0; i < (nrelem-1); i++) // parcurg vectorul <br>
+                            if ( a[i] > a[i+1] ) // compar doua elemente vecine <br>
+                            { // nu sunt in ordine, le interschimb <br>
+                            aux = a[i]; <br>
+                            a[i] = a[i+1]; <br>
+                            a[i+1] = aux; <br>
+                            schimb = 1; } // retin ca am facut schimbari <br>
+                            } <br>
+                            while (schimb) ; <br>
+
+                    </div>
+
+                    <p> <em> Sortare prin insertie </em> </p>
+
+                    <p>
+                        Metoda de sortare prin insertie este, de asemenea, o metoda simpla, pe care o utilizam adesea
+                        cand
+                        ordonam
+                        cartile la jocuri de carti: de fiecare data cand tragem o carte, o plasam pe pozitia corectam
+                        astfel
+                        incat
+                        in mana cartile sa fie ordonate.
+                    </p>
+
+                    <div class="alghorithm_box card">
+
+                        for ( i=1; i < (nrelem); i++ ) <br>
+                            { <br>
+                            v = a[i]; // caut pozitia lui v <br>
+                            for ( poz = i; poz && a[poz-1] > v; poz--) <br>
+                            a[poz] = a[poz-1]; // mut la dreapta elementele > v <br>
+                            a[poz] = v; <br>
+                            } <br>
+
+                    </div>
+
+                    <p> <em> Interclasare </em> </p>
+
+                    <p>
+                        Fie a un vector cu n elemente si b un vector cu m elemente, ordonati crescator.
+                        Sa se construiasca un al treilea vector, c, care sa contina atat elementele vectorului a, cat si
+                        elementele
+                        vectorului b, in ordine crescatoare.
+                    </p>
+
+                    <br>
+                    <div class="alghoritm_box card">
+
+                        for ( i=j=k=0; i < n && j < m;) if ( a[i] < b[j] ) // copiez in c elementul cel mai mic
+                            c[k++]=a[i++]; // copiez din a else c[k++]=b[j++]; // copiez din b // copiez eventualele
+                            elemente ramase in a for(; i < n; i++) c[k++]=a[i]; // copiez eventualele elemente ramse in
+                            b for(; j < m; j++) c[k++]=b[j]; </div>
+
+                            <h4 class=""> 4.3 Prelucrari elementare cu matrice </h4>
+
+
+                            <p> <em> Citirea unei matrice </em></p>
+
+                            <p>
+                                Citirea unei matrice se realizeaza citind elementele matricei, linie cu linie.
+                                Sa consideram ca exemplu o matrice a cu n linii si m coloane (n, m <= 100), cu elemente
+                                    de tip int. </p>
+
+                                    <div class="alghorithm_box card">
+
+                                        int a[100][100], n, m, i, j; // declarare matrice <br>
+                                        cout << "n, m= " ; <br>
+                                            cin >> n >> m; <br>
+                                            for (i=0; i < n ; i++) // parcurg matricea linie cu linie <br>
+                                                for(j=0; j < m; j++) // citesc elementele liniei i <br>
+                                                    { cout << "a[" << i << "][" << j << "]=" cin>> a[i][j]; } <br>
+
+                                    </div>
+
+
+                                    <p><em> Afisarea unei matrice </em></p>
+
+                                    <p> Afisarea unei matrice se realizeaza afisand elementele matricei, linie cu linie:
+                                    </p>
+
+
+                                    <div class="alghorithm_box card">
+
+                                        for (i=0; i < (nrelem); i++) // parcurg matricea linie cu linie <br>
+                                            { for (j=0; j < (nrelem); j++) // afisez componentele de pe linia i <br>
+                                                cout << a[i][j] << ' ' ; <br>
+                                                    cout << endl; } // trec la linia urmatoare <br>
+
+                                    </div>
+
+                                    <p><em> Parcurgerea unei matricii pe linii </em></p>
+
+                                    <p>
+                                        Unele probleme impun parcurgerea unei matricie linie cu linie si prelucrarea
+                                        separata a
+                                        elementelor de pe fiecare linie in parte. De exemplu, sa calculam suma
+                                        elementelor
+                                        de pe fiecare
+                                        linie a unei matrice:
+                                    </p>
+
+                                    <div class="alghorithm_box card">
+
+                                        for (i=0; i < n; i++) <br>
+                                            { <br>
+                                            for (s=0, j=0; j < m; j++) <br>
+                                                s+=a[i][j]; <br>
+
+                                                cout << "Suma de pe linia" << i << " : " << s << '/n' ; <br>
+                                                    } <br>
+
+                                    </div>
+
+                                    <p><em> Parcurgerea unei matricii pe coloane </em></p>
+
+                                    <p>
+                                        Exista probleme care impun parcurgerea unei matrice pe coloane si prelucrarea
+                                        separata a elementelor
+                                        de pe fiecare coloana in parte. De exemplu, sa calculam suma elementelor de pe
+                                        fiecare coloana a unei matrice:
+                                    </p>
+
+                                    <div class="alghorithm_box card">
+
+                                        for (j=0; j < m; i++) <br>
+                                            {for (s=0; i=0; i < n; j++) <br>
+                                                s+=a[i][j]; <br>
+                                                cout << " Suma de pe coloana " << j << " : " << s << endl;} <br>
+
+                                    </div>
+
+
+                                    <h4 clas=""> Prelucrari elementare specifice matricelor patratice </h4>
+
+                                    <p> O matrice se numeste patratica daca numarul de linii este egal cu numarul de
+                                        coloane
+                                        ale matricei. </p>
+
+                                    <p><em> Parcurgerea diagonalelor </em></p> <br>
+
+                                    <p>
+                                        O matrice patratica are doua diagonale: diagonala principala (care uneste primul
+                                        element al matricei,
+                                        a[0][0] cu ultimul element, a[n-1][n-1]) si diagonala secundara (care uneste
+                                        ultimul
+                                        element de pe prima
+                                        linie, a[0][n-1], cu primul element de pe ultima linie, a[0][n-1]). <br>
+                                    </p>
+
+                                    <small> Pe diagonala principala, indicele de linie este egal cu indicele de coloana
+                                    </small>
+
+                                    <p> Afisarea elementeler de pe diagonala principala se poate realiza astfel: </p>
+
+                                    <div class="alghorithm_box card">
+
+                                        for (i=0; i < n; i++ ) <br>
+                                            cout << a[i] << ' ' ; <br>
+                                    </div>
+
+                                    <p> Afisarea elementelor de pe diagonala secundara se poate realiza astfel: </p>
+
+                                    <div class="alghorithm_box card">
+
+                                        for (i=0; i < n; i++) <br>
+                                            cout << a[i][n-i-1] << ' ' ; // cout << a[i][n+i-1] pentru indexare de la 1
+                                                <br>
+
+                                    </div>
+
+                                    <h5> Zone delimitate de diagonale </h5>
+
+                                    <p>
+                                        Cele două diagonale delimitează în matrice patru zone: Nord, Est, Sud și Vest.
+                                        Condițiile verificate de indicii elementelor din aceste zone sunt prezentate mai
+                                        jos:
+                                    </p>
+
+                                    <ul>
+                                        <li> Nord: i < j && i+j < n-1 </li>
+                                        <li> Vest: i > j && i+j < n-1 </li>
+                                        <li> Sud: i > j && i+j > n-1 </li>
+                                        <li> Est: i < j && i+j> n-1 </li>
+                                    </ul>
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+                </div>
+
+        </main>
+
+
+    </section>
+
+    <!--Footer -->
+
+    <div class="container mt-5">
+        <div class="row g-4 font-text-second ">
+            <div class=" col-md-6 ">
+                <div class="extra-style h-100 p-3 d-flex flex-column align-items-center">
+                    <div class="my-3"> <i class="icon-secundar-color fa-solid fa-check-to-slot fa-xl"></i></div>
+                    <small>Prin intermediul acestei sinteze, îți propunem să-ți consolidezi cunoștințele și
+                        să-ți
+                        revizuiești
+                        materia într-un mod eficient și accesibil. Textul nostru conține informații clare și concise,
+                        evidențiind principalele concepte și idei, astfel încât să poți înțelege rapid și ușor
+                        subiectele
+                        cheie.</small>
+                </div>
+            </div>
+            <div class=" col-md-6 ">
+                <div class="extra-style h-100 p-3 d-flex flex-column align-items-center">
+                    <div class="my-3"><i class="icon-secundar-color fa-regular fa-note-sticky fa-xl"></i></div>
+                    <small>Învață chiar acum pentru examenul de BACALAUREAT , mai simplu și mai ușor folosindu-te de
+                        resursele pe
+                        care ți le-am pus la dispoziție !</small>
+                </div>
+            </div>
+            <div class=" col-md-6 ">
+                <div class="extra-style h-100 p-3 d-flex flex-column align-items-center">
+                    <div class="my-3"> <i class="icon-secundar-color fa-solid fa-brain fa-xl"></i></div>
+                    <small>Pe acest site vei găsi materia structurată astfel încât să iți maximizezi șansele la o notă
+                        cât
+                        mai bună
+                        la examenul din această vară.</small>
+                </div>
+            </div>
+            <div class=" col-md-6 ">
+                <div class="extra-style h-100 p-3 d-flex flex-column align-items-center">
+                    <div class="my-3"> <i class="icon-secundar-color fa-solid fa-sitemap fa-xl"></i></div>
+                    <small>Site-ul nostru este conceput pentru a fi intuitiv și ușor de navigat, astfel încât să găsești
+                        rapid
+                        informațiile de care ai nevoie. Indiferent de materie sau de subiectul căutat, poți accesa
+                        sinteza
+                        relevantă cu doar câteva click-uri.</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="mt-3 font-text-first">
+        <hr>
+        <div class="footer-section-first">
+            <div class="newsletter ">
+                <div>
+                    <p class="m-0">Inscriete aici si fi la curent cu tot ce facem!</p>
+
+                </div>
+                <div>
+                    <spam>Introdu adresa de email si te abonzi la Newsletter-ul nostru</spam>
+                    <div class="footer-send-input">
+                        <input type="email" placeholder="E-mail">
+                        <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="info footer-p ">
+                <p class="icon-secundar-color m-0">Informatii</p>
+                <ul class="p-0">
+                    <li><a>Acasa</a></li>
+                    <li><a>Colectii</a></li>
+                    <li><a>Contact</a></li>
+                    <li><a>Intrebari Frecvente</a></li>
+                </ul>
+            </div>
+            <div class="link footer-p">
+                <p class="icon-secundar-color m-0">Link-uri Utile</p>
+                <ul class="p-0">
+                    <li><a>Termeni si Conditii</a></li>
+                    <li><a>Confidentialitate</a></li>
+                    <li><a>Metoda de Plata</a></li>
+                    <li><a>Politica de Returnare</a></li>
+                </ul>
+            </div>
+            <div class="story footer-p">
+                <p class="icon-secundar-color m-0">Povestea</p>
+                <span><em>Acest proiect a luat naștere din dorința de a crea o comunitate dedicată gazonului. Nu suntem
+                        puțini cei care iubim această monocultură aastfel acest site își propune să centralizeze cele
+                        mai
+                        relevante informații din domeniu dar și de a comercializa cele mai bune produse din
+                        domeniu!</em></span>
+            </div>
+        </div>
+        <div class="footer-section-second">
+            <div class="icon-secundar-color social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </div>
+            <div class="footer-social">© Info BAC Martinescu Ionut</div>
+
+        </div>
+
+
+
+
+
+    </footer>
+    <script src="./JS/script.js"></script>
+    <script src="./JS/ThemeChange.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

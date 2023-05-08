@@ -1,0 +1,13 @@
+.bg-dark * {
+    color: white;
+}
+
+.bg-dark small {
+    color: white;
+}
+
+
+.bg-dark .extra-style {
+    box-shadow: 15px 15px 30px #272525,
+        -15px -15px 30px #0c0b0b;
+}

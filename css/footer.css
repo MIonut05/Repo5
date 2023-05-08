@@ -1,0 +1,114 @@
+/* -------------------------------------------------------------------------- */
+/*                                 Prima Parte                                */
+/* -------------------------------------------------------------------------- */
+footer {
+    padding: 10px;
+   
+}
+
+.footer-section-first {
+    
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.footer-section-first li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-send-input {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+   border: solid 2px rgb(50, 49, 49);
+    width: 100%;
+}
+
+.footer-send-input button {
+    border: none;
+    background: transparent;
+}
+
+input:focus {
+    outline: none;
+}
+
+input {
+    background: transparent;
+    border: none;
+    height: 40px;
+    width: 100%;
+
+}
+
+.list {
+    margin-top: 10px;
+
+    margin-bottom: 10px;
+}
+
+.footer-p {
+    padding: 0px 10px;
+
+
+}
+
+.story span {
+    font-size: 15px;
+    display: block;
+    overflow: visible;
+
+}
+/* -------------------------------------------------------------------------- */
+/*                                A doua parte                                */
+/* -------------------------------------------------------------------------- */
+.footer-section-second {
+    font-family: var(--font-family-text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.social{
+    padding: 20px;
+}
+.fa-brands{
+    margin:10px;
+   
+}
+.footer-social{
+    font-size: 20px;
+    display:flex;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 805px) {
+
+    .footer-section-first {
+        grid-template-columns: auto auto auto auto;
+
+    }
+
+    .footer-send-input {
+        margin-top: 50px;
+    }
+
+    .story span {
+        font-size: 15px;
+        display: block;
+        overflow: hidden;
+        height: 130px;
+        width: 100px;
+    }
+
+    .footer-p {
+        padding: 0px 30px;
+
+
+    }
+
+
+}
